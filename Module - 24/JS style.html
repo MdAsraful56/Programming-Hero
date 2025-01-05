@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select</title>
+    <style>
+        #btn{
+            color: rgb(255, 250, 251);
+            background: #000;
+        }
+        .ptag{
+            color: rgb(0, 0, 0);
+            background-color: aqua;
+        }
+        .ptags{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h2 class="header">Heading Tag - 1</h2>
+        <h2 class="header">Heading Tag - 2</h2>
+        <h2 class="header">Heading Tag - 3</h2>
+
+        <button id="btn">Submit</button>
+
+        <section>
+            <ul>
+                <li>list - 1</li>
+                <li>list - 2</li>
+                <li>list - 3</li>
+            </ul>
+        </section>
+
+        <section>
+            <ul>
+                <li>list - 1</li>
+                <li>list - 2</li>
+                <li>list - 3</li>
+            </ul>
+        </section>
+
+        <section>
+            <ul>
+                <li>list - 1</li>
+                <li>list - 2</li>
+                <li>list - 3</li>
+            </ul>
+        </section>
+
+        <section>
+            <ul>
+                <li>list - 1</li>
+                <li>list - 2</li>
+                <li>list - 3</li>
+            </ul>
+        </section>
+
+        <p id="pTag" class="ptags">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique quos sequi saepe quae! Earum atque, nulla quo voluptatibus placeat corporis? Doloribus pariatur eos maiores hic aliquid impedit perferendis non?</p>
+    </main>
+
+
+    <script>
+
+        const pag = document.getElementById('pTag');
+        pag.classList.add('ptag');
+        pag.classList.remove('ptags');
+
+        const sections = document.querySelectorAll('section');
+        // sections.style.color = 'red';
+        for (const section of sections) {
+            section.style.color = 'black';
+            section.style.border = '2px solid red';
+            section.style.margin = '10px';
+            section.style.borderRadius = '15px';
+            section.style.backgroundColor = 'gray'
+        }
+
+        const btn = document.getElementById('btn');
+        btn.style.borderRadius = '12px';
+        btn.style.fontSize = '20px';
+        // console.log(btn.innerText);
+
+    </script>
+</body>
+</html>

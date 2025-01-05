@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+        .food{
+            border: 2px solid crimson;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .food img{
+            width: 100%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 577px) and (max-width: 768px) {
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 992px) {
+            .container{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 993pxpx) and (max-width: 1200px) {
+            .container{
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="food">
+            <img src="https://www.momsmeals.com/Content/cms/images/the-full-scoop/BlogSeries2.jpg" alt="">
+            <h3>food Item - 1</h3>
+            <p>Price: $100</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsam asperiores est impedit, tenetur autem enim quidem ex cupiditate? Laboriosam!</p>
+        </div>
+        <div class="food">
+            <img src="https://www.momsmeals.com/Content/cms/images/the-full-scoop/BlogSeries2.jpg" alt="">
+            <h3>food Item - 2</h3>
+            <p>Price: $200</p>
+            <p>Quod voluptas mollitia voluptatibus unde velit maxime similique, quis, optio, reiciendis consequuntur saepe possimus aut itaque vero. Officia, doloremque repellat!</p>
+        </div>
+        <div class="food">
+            <img src="https://www.momsmeals.com/Content/cms/images/the-full-scoop/BlogSeries2.jpg" alt="">
+            <h3>food Item - 3</h3>
+            <p>Price: $300</p>
+            <p>Magni ea laborum consequuntur, ratione dolore in, dolorum architecto eligendi facilis consequatur laboriosam! Nobis inventore optio pariatur, ad incidunt temporibus?</p>
+        </div>
+        <div class="food">
+            <img src="https://www.momsmeals.com/Content/cms/images/the-full-scoop/BlogSeries2.jpg" alt="">
+            <h3>food Item - 4</h3>
+            <p>Price: $400</p>
+            <p>Libero dolor nesciunt dolores architecto non laborum expedita, molestias repudiandae quae laudantium ullam porro vel sint itaque assumenda voluptatibus veritatis?</p>
+        </div>
+        <div class="food">
+            <img src="https://www.momsmeals.com/Content/cms/images/the-full-scoop/BlogSeries2.jpg" alt="">
+            <h3>food Item - 5</h3>
+            <p>Price: $500</p>
+            <p>Aspernatur consectetur, obcaecati voluptatibus maxime, odio aliquam sit, magnam voluptates harum architecto est quaerat saepe sed! Aliquam a et quo.</p>
+        </div>
+        <div class="food">
+            <img src="https://www.momsmeals.com/Content/cms/images/the-full-scoop/BlogSeries2.jpg" alt="">
+            <h3>food Item - 6</h3>
+            <p>Price: $600</p>
+            <p>Facilis odio eum veritatis aliquam culpa officia, velit tempora voluptatem saepe eaque ratione voluptate sint voluptas dolorum alias itaque temporibus.</p>
+        </div>
+        <div class="food">
+            <img src="https://www.momsmeals.com/Content/cms/images/the-full-scoop/BlogSeries2.jpg" alt="">
+            <h3>food Item - 7</h3>
+            <p>Price: $700</p>
+            <p>Debitis quas sapiente esse officiis? Earum quae numquam consectetur et aliquid voluptates, ipsum provident libero ut placeat similique dolore quam?</p>
+        </div>
+        <div class="food">
+            <img src="https://www.momsmeals.com/Content/cms/images/the-full-scoop/BlogSeries2.jpg" alt="">
+            <h3>food Item - 8</h3>
+            <p>Price: $800</p>
+            <p>Necessitatibus placeat tenetur quas qui sunt sequi laudantium error quaerat consequatur illo, culpa explicabo adipisci cumque in blanditiis, non maxime!</p>
+        </div>
+        <div class="food">
+            <img src="https://www.momsmeals.com/Content/cms/images/the-full-scoop/BlogSeries2.jpg" alt="">
+            <h3>food Item - 9</h3>
+            <p>Price: $900</p>
+            <p>Facilis, fugiat quam facere sint dolores magnam ad? Dolor dolorem quibusdam beatae labore odio? Explicabo sequi enim modi neque quibusdam.</p>
+        </div>
+        <div class="food">
+            <img src="https://www.momsmeals.com/Content/cms/images/the-full-scoop/BlogSeries2.jpg" alt="">
+            <h3>food Item - 10</h3>
+            <p>Price: $1000</p>
+            <p>Tempora fugiat aspernatur eaque magni aliquid ab, impedit sint expedita consectetur excepturi optio voluptate eligendi dolor fuga cum quas cumque.</p>
+        </div>
+        <div class="food">
+            <img src="https://www.momsmeals.com/Content/cms/images/the-full-scoop/BlogSeries2.jpg" alt="">
+            <h3>food Item - 11</h3>
+            <p>Price: $1100</p>
+            <p>Excepturi, voluptas beatae ex at rem accusantium sit iste reprehenderit recusandae tenetur doloremque necessitatibus esse dignissimos repellat voluptatibus assumenda voluptatum!</p>
+        </div>
+        <div class="food">
+            <img src="https://www.momsmeals.com/Content/cms/images/the-full-scoop/BlogSeries2.jpg" alt="">
+            <h3>food Item - 12</h3>
+            <p>Price: $1200</p>
+            <p>Repudiandae id iusto perspiciatis illo hic repellat? Nesciunt culpa necessitatibus ratione repellat vitae facere error molestiae amet qui provident? Sapiente.</p>
+        </div>
+    </div>
+</body>
+</html>

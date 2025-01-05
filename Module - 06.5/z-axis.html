@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-axis</title>
+    <style>
+        .div{
+            /* border: 2px dotted blue; */
+            border: 2px solid blue;
+            width: 30%;
+            height: 100px;
+            gap: 10px;
+            margin: 10px;
+            position: relative;
+        }
+        #div-1{
+            z-index: 10;
+            background-color: cornflowerblue;
+        }
+        #div-2{
+            top: -70px;
+            left: 20px;
+            z-index: 4;
+            background-color: chartreuse;
+        }
+        #div-3{
+            background-color: darkorange;
+            left: 10px;
+            top: -100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Z-Index</h2>
+    <div class="container">
+        <div class="div" id="div-1"></div>
+        <div class="div" id="div-2"></div>
+        <div class="div" id="div-3"></div>
+    </div>
+</body>
+</html>

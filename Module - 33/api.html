@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="loadUser()">Load Users</button>
+
+
+    <section>
+        <div id="divcontainer">
+            <ul id="ulList"></ul>
+        </div>
+    </section>
+
+    <script>
+        function loadUser(){
+            fetch('https://jsonplaceholder.typicode.com/users')
+                .then(res => res.json())
+                .then(data => displayUser(data))
+        }
+
+
+        const ulList = document.getElementById('ulList');
+
+
+        function displayUser(users){
+            for (const user of users) {
+                const li = document.createElement('li');
+                li.innerText = user.name;
+                ulList.appendChild(li);
+                console.log(user);
+            }
+        }
+    </script>
+</body>
+</html>

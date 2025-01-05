@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Events</title>
+</head>
+<body>
+    <h2>More Events Types</h2>
+
+    <button id="btn" onmousemove="btn()">Submit</button>
+
+    <textarea name="" id="textarea"></textarea>
+
+    <script>
+        function btn() {
+            console.log('Hello Mama');
+        }
+
+        document.getElementById('textarea').addEventListener('focus', function(){
+            console.log("Inside the ")
+        })
+        // document.getElementById('textarea').addEventListener('keypress', function(event){
+        //     console.log(event.target.value);
+        // })
+        // document.getElementById('textarea').addEventListener('keydown', function(event){
+        //     console.log(event.target.value);
+        // })
+        document.getElementById('textarea').addEventListener('keyup', function(event){
+            console.log(event.target.value);
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="main">
+        <h1>Hello</h1>
+        <section>
+            <ul>
+                <li>Hello-01</li>
+                <li>Hello-02</li>
+                <li>Hello-03</li>
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <li>Hello-01</li>
+                <li>Hello-02</li>
+                <li>Hello-03</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        const mainer= document.getElementById('main');
+
+        const sectionCreate = document.createElement('section');
+        sectionCreate.innerHTML = `
+        <ul>
+            <li>Hello - 01</li>
+            <li>Hello - 02</li>
+            <li>Hello - 03</li>
+            <li>Hello - 04</li>
+            <li>Hello - 05</li>
+        </ul>
+        `;
+
+        mainer.appendChild(sectionCreate);
+    </script>
+
+    <script>
+        
+        const main = document.getElementById('main');
+
+        const section = document.createElement('section');
+        const h1 = document.createElement('h1');
+        h1.innerText = "My Subject";
+        // section.appendChild(h1);
+
+        const li = document.createElement('li');
+        li.innerText = 'Chemistry';
+        section.appendChild(li);
+
+        const li1 = document.createElement('li');
+        li1.innerText = 'Physics';
+        section.appendChild(li1);
+
+        const li2 = document.createElement('li');
+        li2.innerText = 'Biology';
+        section.appendChild(li2);
+
+        const li3 = document.createElement('li');
+        li3.innerText = 'Math';
+        section.appendChild(li3);
+
+        main.appendChild(section);
+    </script>
+
+    <script>
+        const sections = document.querySelectorAll('section');
+        for (const section of sections) {
+            section.style.border = '2px solid gray';
+            section.style.borderRadius = '12px';
+            section.style.backgroundColor = 'lightgray';
+            section.style.margin = '10px';
+        }
+
+    </script>
+</body>
+</html>
+
+

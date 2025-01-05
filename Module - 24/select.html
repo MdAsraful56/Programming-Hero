@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <main>
+        <h2 class="header">Heading Tag - 1</h2>
+        <h2 class="header">Heading Tag - 2</h2>
+        <h2 class="header">Heading Tag - 3</h2>
+
+        <button id="btn">Submit</button>
+
+        <section>
+            <ul>
+                <li>list - 1</li>
+                <li>list - 2</li>
+                <li>list - 3</li>
+            </ul>
+        </section>
+    </main>
+
+
+    <script>
+        const tagName = document.getElementsByTagName('ul');
+        console.log(tagName);
+
+        const id = document.getElementById('btn');
+        console.log(id);
+
+        const className = document.getElementsByClassName('header');
+        console.log(className);
+
+        const quary = document.querySelector('.header')
+        console.log(quary);
+
+        const quaryAll = document.querySelectorAll('li');
+        console.log(quaryAll);
+    </script>
+</body>
+</html>

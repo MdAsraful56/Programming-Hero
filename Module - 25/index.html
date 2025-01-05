@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    
+    <button onclick="document.body.style.backgroundColor = 'red'">Click Me</button>
+    <button id="btn">Click Me</button>
+    <button onclick="blue()">Click Me</button>
+    <button id="pink" onclick="">Click Me</button>
+    <button id="green" onclick="">Click Me</button>
+    <button id="golden" onclick="">Click Me</button>
+
+
+
+    <script>
+        const btn = document.getElementById('btn');
+        btn.onclick = gray;
+
+        function gray() {
+            document.body.style.backgroundColor = 'gray';
+        }
+
+        function blue() {
+            document.body.style.backgroundColor = 'blue';
+        }
+
+
+        const pinkBtn = document.getElementById('pink');
+        pinkBtn.addEventListener('click', pink)
+
+        function pink() {
+            document.body.style.backgroundColor = 'pink';
+        }
+
+
+        const greenBtn = document.getElementById('green');
+        greenBtn.addEventListener('click', function(){
+            document.body.style.backgroundColor = 'green';
+        })
+
+
+
+        document.getElementById('golden').addEventListener('click', function(){
+            document.body.style.backgroundColor = 'gold';
+        })
+    </script>
+</body>
+</html>
