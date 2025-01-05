@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>storage</title>
+</head>
+<body>
+    <h1>Local storage and session storage</h1>
+
+    <input type="text" placeholder="Storage id" id="id">
+    <input type="text" placeholder="Storage value" id="value">
+    <button onclick="AddStroage()">Add to Storage</button>
+    <script>
+        localStorage.setItem('userId', 876539);
+
+        function AddStroage(){
+            const id = document.getElementById('id').value;
+            const value = document.getElementById('value').value;
+
+            if (id && value) {
+                localStorage.setItem(id, value);
+            }
+            id.value = '';
+            value.value = '';
+        }
+    </script>
+</body>
+</html>
