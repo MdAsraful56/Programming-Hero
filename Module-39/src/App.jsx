@@ -2,9 +2,10 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Counter from './Counter'
-import Team from './Team'
-import Users from './User'
+import Friends from './Friends'
+// import Counter from './Counter'
+// import Team from './Team'
+// import Users from './User'
 
 function App() {
 
@@ -35,6 +36,9 @@ function App() {
       <h3>React Core Concepts - 02</h3>
       <h4>Day - 02</h4>
 
+
+
+      <Friends></Friends>
 
       {/* <Users></Users> */}
 
