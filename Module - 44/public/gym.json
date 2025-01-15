@@ -1,0 +1,8 @@
+[
+    {"id":1,"name":"Basic Plan","price":29.99,"features":["Access to gym equipment","Locker room access","1 group fitness class per week"]},
+    {"id":2,"name":"Standard Plan","price":49.99,"features":["Access to gym equipment","Locker room access","Unlimited group fitness classes","1 personal training session per month"]},
+    {"id":3,"name":"Premium Plan","price":79.99,"features":["Access to gym equipment","Locker room access","Unlimited group fitness classes","Weekly personal training sessions","Access to the sauna and spa"]},
+    {"id":4,"name":"Family Plan","price":99.99,"features":["Access for up to 4 family members","Locker room access","Unlimited group fitness classes","Monthly personal training session for each member","Access to the sauna and spa"]},
+    {"id":5,"name":"Student Plan","price":19.99,"features":["Access to gym equipment","Locker room access","2 group fitness classes per week","Discounted personal training rates"]},
+    {"id":6,"name":"Corporate Plan","price":199.99,"features":["Access for up to 10 employees","Locker room access","Unlimited group fitness classes","Monthly wellness workshops","Access to the sauna and spa"]}
+]
