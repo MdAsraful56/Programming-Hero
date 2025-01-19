@@ -1,29 +1,24 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
 import { BrowserRouter, Routes, Route, createBrowserRouter, RouterProvider } from "react-router";
-import Home from './components/Home.jsx';
-import Blog from './components/Blog.jsx';
-import About from './components/About.jsx';
-import User from './components/User.jsx';
+import Home from './components/Home/Home';
+import Posts from './components/Posts/Posts';
+import Users from './components/Users/Users';
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Home></Home>,
+    path: '/',
+    element: <Home />,
     children: [
       {
-        path: '/blog',
-        element: <Blog/>
+        path: '/posts',
+        loader: () => { fetch('https://jsonplaceholder.typicode.com/posts') },
+        element: <Posts/>
       },
       {
-        path: '/about',
-        element: <About/>
-      },
-      {
-        path: '/userrr',
-        element: <User/>
+        path: '/users',
+        element: <Users/>
       }
     ]
   },
@@ -31,7 +26,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <App /> */}
     <RouterProvider router={router} />
   </StrictMode>,
 )
