@@ -9,7 +9,7 @@ const Users = () => {
             <h3>All Users : </h3>
             <div>
                 {
-                    usersData.map()
+                    usersData
                 }
             </div>
         </div>
